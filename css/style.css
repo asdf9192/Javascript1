@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+#wrapper {width:100%;height:700px;background:#99c;}
+
+#wrapper #header {z-index:3;position:relative;width:100%;height:100px;background:#c99;}
+#wrapper #header .wrap {width:1200px;height:100%;margin:0 auto;background:#aae;}
+#wrapper #header .wrap .content {width:100%;height:100%;background:#eee;}
+#wrapper #header .wrap .content .left-box {float:left;width:200px;height:100%;background:#fcc}
+#wrapper #header .wrap .content .right-box {float:left;width:1000px;height:100%;background:#ccf;}
+
+/* 네비게이션 */
+/* #wrapper #header .wrap .content .right-box #nav {text-align:right;padding:25px 25px 25px 0;background:#00e;} 패딩으로 정렬*/
+/* #wrapper #header .wrap .content .right-box #nav {width:720px;text-align:right;margin:25px auto 25px auto;} 가운데 정렬 */
+/* #wrapper #header .wrap .content .right-box #nav {width:720px;text-align:right;margin:25px auto 25px 0;} 왼쪽 정렬 */
+/* #wrapper #header .wrap .content .right-box #nav {width:720px;text-align:right;margin:25px 0 25px auto;} 오른쪽 정렬 */
+#wrapper #header .wrap .content .right-box #nav {width:auto;text-align:right;margin:25px 25px 25px 0;} 
+#wrapper #header .wrap .content .right-box #nav .main-btn-wrap {background:#c00;display:inline-block;}
+#wrapper #header .wrap .content .right-box #nav .main-btn-wrap > li {float:left;width:180px;background:#99c;text-align:center;}
+#wrapper #header .wrap .content .right-box #nav .main-btn-wrap > li > a {display:block;background:#f6f6f6;color:#000;line-height:50px;}
+#wrapper #header .wrap .content .right-box #nav .main-btn-wrap > li > a:hover {background:#444;color:#f0f0f0;}
+
+/* 서브 메뉴 */
+#wrapper #header .wrap .content .right-box #nav .main-btn-wrap > li .sub {text-align:center;width:100%;display:none;}
+#wrapper #header .wrap .content .right-box #nav:hover .main-btn-wrap > li .sub {display:block;}
+#wrapper #header .wrap .content .right-box #nav .main-btn-wrap > li .sub ul {width:auto;}
+#wrapper #header .wrap .content .right-box #nav .main-btn-wrap > li .sub ul li {width:auto;}
+#wrapper #header .wrap .content .right-box #nav .main-btn-wrap > li .sub ul li a {display:block;background:#f6f6f6;line-height:45px;}
+#wrapper #header .wrap .content .right-box #nav .main-btn-wrap > li .sub ul li a:hover {background:#777;color:#f0f0f0;}
+
+#wrapper #main {z-index:2;position:relative;width:1200px;height:500px;margin:0 auto;background:#cc9;}
+#wrapper #main #section1 {width:100%;height:300px;background:#eea;}
+
+/* 메인 슬라이드 */
+#wrapper #main #section1 .slide-container {position:relative;width:100%;height:300px;}
+#wrapper #main #section1 .slide-container .slide-view {z-index:1;position:relative;width:100%;height:300px;overflow:hidden;}
+#wrapper #main #section1 .slide-container .slide-view .slide-wrap {position:relative;left:0;width:4800px;height:300px;transition:all .6s ease-in-out;}
+#wrapper #main #section1 .slide-container .slide-view .slide-wrap .slide {float:left;width:1200px;height:300px;}
+#wrapper #main #section1 .slide-container .slide-view .slide-wrap .slide0 {background:url(../img/pasta-1181189_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrapper #main #section1 .slide-container .slide-view .slide-wrap .slide1 {background:url(../img/raspberries-5576401_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrapper #main #section1 .slide-container .slide-view .slide-wrap .slide2 {background:url(../img/raspberry-2023404_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrapper #main #section1 .slide-container .slide-view .slide-wrap .slide3 {background:url(../img/waffles-5192625_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+
+/* 좌우 슬라이드 버튼 */
+#wrapper #main #section1 .slide-container .next-btn-wrap {z-index:2;position:absolute;top:50%;margin-top:-30px;right:50px;width:60px;height:60px;transform:rotate(45deg);border-top:1px solid #fff;border-right:1px solid #fff;}
+#wrapper #main #section1 .slide-container .next-btn-wrap a {display:block;width:100%;height:100%;}
+
+#wrapper #main #section1 .slide-container .prev-btn-wrap {z-index:2;position:absolute;top:50%;margin-top:-30px;left:50px;width:60px;height:60px;transform:rotate(-45deg);border-top:1px solid #fff;border-left:1px solid #fff;}
+#wrapper #main #section1 .slide-container .prev-btn-wrap a {display:block;width:100%;height:100%;}
+
+
+#wrapper #main #section2 {width:100%;height:200px;background:#aea;}
+#wrapper #main #section2 .content {width:100%;height:100%;}
+#wrapper #main #section2 .content .left-box {float:left;width:33.333%;height:100%;background:#eff;cursor:pointer;}
+#wrapper #main #section2 .content .left-box .slide-container {position:relative;width:100%;height:200px;}
+#wrapper #main #section2 .content .left-box .slide-container .slide-view {z-index:1;position:relative;width:100%;height:200px;overflow:/* visible */hidden;}
+#wrapper #main #section2 .content .left-box .slide-container .slide-view .slide-wrap {position:relative;left:0;width:1600px;height:200px;transition:all .6s ease-in-out;}
+#wrapper #main #section2 .content .left-box .slide-container .slide-view .slide-wrap .slide {float:left;width:400px;height:200px;}
+#wrapper #main #section2 .content .left-box .slide-container .slide-view .slide-wrap .slide1 {background:url(../img/berries-1546125_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrapper #main #section2 .content .left-box .slide-container .slide-view .slide-wrap .slide2 {background:url(../img/dark-mood-food-2986532_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrapper #main #section2 .content .left-box .slide-container .slide-view .slide-wrap .slide3 {background:url(../img/dessert-1283822_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrapper #main #section2 .content .left-box .slide-container .slide-view .slide-wrap .slide4 {background:url(../img/churros-2188871_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+
+#wrapper #main #section2 .content .left-box .slide-container .next-btn-wrap {z-index:2;display:block;position:absolute;top:50%;margin-top:-20px;right:20px;width:40px;height:40px;background:transparent;border-top:1px solid #fff;border-right:1px solid #fff;transform:rotate(45deg);}
+#wrapper #main #section2 .content .left-box .slide-container .next-btn-wrap a {display:block;width:100%;height:100%;background:transparent;}
+
+#wrapper #main #section2 .content .left-box .slide-container .prev-btn-wrap {z-index:2;display:block;position:absolute;top:50%;margin-top:-20px;left:20px;width:40px;height:40px;background:transparent;border-top:1px solid #fff;border-left:1px solid #fff;transform:rotate(-45deg)}
+#wrapper #main #section2 .content .left-box .slide-container .prev-btn-wrap a {display:block;width:100%;height:100%;background:transparent;}
+
+
+#wrapper #main #section2 .content .center-box {float:left;width:33.333%;height:100%;background:#eef;}
+#wrapper #main #section2 .content .center-box .slide-container {position:relative;;width:100%;height:200px;}
+#wrapper #main #section2 .content .center-box .slide-container .slide-view{z-index:1;position:relative;;width:100%;height:200px;overflow:hidden;}
+#wrapper #main #section2 .content .center-box .slide-container .slide-view .slide-wrap {position:relative;top:0;width:100%;height:800px;transition:all .6s ease-in-out;}
+#wrapper #main #section2 .content .center-box .slide-container .slide-view .slide-wrap .slide {position:relative;width:100%;height:200px;}
+#wrapper #main #section2 .content .center-box .slide-container .slide-view .slide-wrap .slide1 {background:url(../img/dessert-5582984_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrapper #main #section2 .content .center-box .slide-container .slide-view .slide-wrap .slide2 {background:url(../img/gingerbread-men-3918049_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrapper #main #section2 .content .center-box .slide-container .slide-view .slide-wrap .slide3 {background:url(../img/gummibarchen-318362_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrapper #main #section2 .content .center-box .slide-container .slide-view .slide-wrap .slide4 {background:url(../img/mouse-bacon-2692474_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrapper #main #section2 .content .center-box .slide-container .slide-view .slide-wrap .slide4 {background:url(../img/mouse-bacon-2692474_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+
+#wrapper #main #section2 .content .center-box .slide-container .next-btn-wrap {z-index:2;display:block;position:absolute;top:10px;left:50%;margin-left:-20px;width:40px;height:40px;border-top:1px solid #fff;border-left:1px solid #fff;transform:rotate(45deg);}
+#wrapper #main #section2 .content .center-box .slide-container .next-btn-wrap .next-btn {display:block;width:100%;height:100%;}
+
+#wrapper #main #section2 .content .center-box .slide-container .prev-btn-wrap {z-index:2;display:block;position:absolute;bottom:10px;left:50%;margin-left:-20px;width:40px;height:40px;border-bottom:1px solid #fff;border-right:1px solid #fff;transform:rotate(45deg);}
+#wrapper #main #section2 .content .center-box .slide-container .prev-btn-wrap .prev-btn {display:block;width:100%;height:100%;}
+
+#wrapper #main #section2 .content .right-box  {float:left;width:33.333%;height:100%;background:#ffe;cursor:pointer;}
+#wrapper #main #section2 .content .right-box .slide-container {position:relative;width:100%;height:200px;}
+#wrapper #main #section2 .content .right-box .slide-container .slide-view {z-index:1;position:relative;width:100%;height:200px;overflow:hidden;}
+#wrapper #main #section2 .content .right-box .slide-container .slide-view .slide-wrap {position:relative;left:0;width:1600px;height:200px;transition:all .6s ease-in-out;}
+#wrapper #main #section2 .content .right-box .slide-container .slide-view .slide-wrap .slide {float:left;width:400px;height:200px;}
+#wrapper #main #section2 .content .right-box .slide-container .slide-view .slide-wrap .slide1 {background:url(../img/caramel-1952997_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrapper #main #section2 .content .right-box .slide-container .slide-view .slide-wrap .slide2 {background:url(../img/candy-2538878_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrapper #main #section2 .content .right-box .slide-container .slide-view .slide-wrap .slide3 {background:url(../img/candy-1961536_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrapper #main #section2 .content .right-box .slide-container .slide-view .slide-wrap .slide4 {background:url(../img/candy-680200_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+
+#wrapper #main #section2 .content .right-box .slide-container .next-btn-wrap {z-index:2;display:block;position:absolute;top:50%;margin-top:-20px;right:20px;width:40px;height:40px;background:transparent;border-top:1px solid #fff;border-right:1px solid #fff;transform:rotate(45deg);}
+#wrapper #main #section2 .content .right-box .slide-container .next-btn-wrap a {display:block;width:100%;height:100%;background:transparent;}
+
+#wrapper #main #section2 .content .right-box .slide-container .prev-btn-wrap {z-index:2;display:block;position:absolute;top:50%;margin-top:-20px;left:20px;width:40px;height:40px;background:transparent;border-top:1px solid #fff;border-left:1px solid #fff;transform:rotate(-45deg)}
+#wrapper #main #section2 .content .right-box .slide-container .prev-btn-wrap a {display:block;width:100%;height:100%;background:transparent;}
+
+
+#wrapper #footer {z-index:1;position:relative;width:100%;height:100px;background:#9cc;}
+#wrapper #footer .wrap {width:1200px;height:100%;background:#eea;margin:0 auto;}
+#wrapper #footer .wrap .content {width:100%;height:100%;}
+#wrapper #footer .wrap .content .left-box  {float:left;width:200px;height:100%;background:#ddd;}
+#wrapper #footer .wrap .content .right-box {float:left;width:1000px;height:100%;background:#ffa;}
+#wrapper #footer .wrap .content .right-box .top-box {width:100%;height:50%;background:#dcc;}
+#wrapper #footer .wrap .content .right-box .bottom-box {width:100%;height:50%;background:#ccd;}
